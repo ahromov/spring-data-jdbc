@@ -11,20 +11,23 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
- * {@link Account} is an entity that is stored in the database table called "accounts". It's primary key is
- * represented by autoincrement column {@code id}.
+ * {@link Account} is an entity that is stored in the database table called
+ * "accounts". It's primary key is represented by autoincrement column
+ * {@code id}.
  */
 @Table("accounts")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Account {
-    @Id
-    private Long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private LocalDate birthday;
-    private LocalDateTime creationTime;
-    private BigDecimal balance = BigDecimal.ZERO.setScale(2);
+
+	@Id
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private LocalDate birthday;
+	private LocalDateTime creationTime;
+	private BigDecimal balance = BigDecimal.ZERO.setScale(2);
+
 }

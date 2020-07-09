@@ -1,7 +1,14 @@
 package com.bobocode.exception;
 
 public class AccountNotFoundException extends RuntimeException {
-    public AccountNotFoundException(String message) {
-        super(message);
-    }
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6438649524143281907L;
+
+	public AccountNotFoundException(String message) {
+		super(message);
+	}
+
 }
