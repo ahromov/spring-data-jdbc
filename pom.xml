@@ -34,12 +34,9 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 
-		<!-- <dependency> <groupId>com.h2database</groupId> <artifactId>h2</artifactId> 
-			<scope>runtime</scope> </dependency> -->
-
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -84,36 +81,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<plugin>
-				<groupId>org.flywaydb</groupId>
-				<artifactId>flyway-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>springjdbc</id>
-						<phase>install</phase>
-						<goals>
-							<goal>migrate</goal>
-						</goals>
-						<configuration>
-							<url>jdbc:mysql://127.0.0.1:3306/?serverTimezone=Europe/Kiev</url>
-							<user>root</user>
-							<password>toor</password>
-							<schemas>
-								<schema>springjdbc</schema>
-							</schemas>
-							<baselineOnMigrate>true</baselineOnMigrate>
-							<dependencies>
-								<dependency>
-									<groupId>mysql</groupId>
-									<artifactId>mysql-connector-java</artifactId>
-									<!-- <version>5.1.49</version> -->
-								</dependency>
-							</dependencies>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
