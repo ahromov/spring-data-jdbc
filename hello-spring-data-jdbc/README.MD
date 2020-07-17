@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/bobocode-projects/resources/master/image/logo_transparent_background.png" height=50/>Hello Spring Data JDBC exercise :muscle:
+#Hello Spring Data JDBC exercise :muscle:
 Get started with *Spring Data JDBC*
 ### Task
 The task is to implement `AccountService` using `AccountRepository`.  In order to do that you need to **configure 
